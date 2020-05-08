@@ -1,0 +1,175 @@
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.stepProgress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 440px;
+ height: 30px;
+ position: relative;
+ color: rgb(155, 155, 155);
+}
+
+.progressBar-wrapper {
+height: 2px;
+width: 440px;
+position: absolute;  
+top: 43px;
+background:rgb(224, 224, 224);
+/* margin-left:unset */
+}
+
+.progressBar{
+ height: 2px;
+ width: 50%;
+top: 43px;
+background: -webkit-gradient(linear, left top, right top, color-stop(0.09%, #9c2686), to(#e71324));
+background: linear-gradient(to right, #9c2686 0.09%, #e71324 100%);
+}
+.displayError{
+  display:none;
+}
+
+.error{
+  color:red;
+}
+
+#app{
+  margin-top:unset;
+}
+
+#app form div{
+  position: relative;
+}
+
+#app form div label{
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  pointer-events: none;
+  color: #999;
+  transition: .5s;
+}
+
+
+#app input:focus ~label{
+top: 4px;
+font-size: 0.8rem;
+}
+
+#app input:invalid ~label{
+top: 4px;
+font-size: 0.8rem;
+color:red;
+}
+
+#app input:invalid ~input{
+  color:red;
+}
+
+#app input {
+  font-size: 16px;
+  padding-top: 14px;
+      padding-left: 4px;
+}
+
+
+#app input:invalid{
+    border:1px solid red;
+    color: red;
+}
+
+
+
+
+.send_btn {
+width: 440px;
+height: 40px;
+top: 13px;
+background: -webkit-gradient(linear, left top, right top, color-stop(0.09%, #9c2686), to(#e71324));
+background: linear-gradient(to right, #9c2686 0.09%, #e71324 100%);
+color: white;
+cursor: pointer;  
+display: flex;
+align-items: center;
+ justify-content: center;
+}
+
+input {
+  width: 440px;
+  height: 54px;
+}
+
+.text-container{
+  margin: 0 auto;
+  margin-left: 3.5rem;
+}
+
+.text {
+  width: 360px;
+  height: 56px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 28px;
+  color: #464646;
+}
+
+.signUp-container{
+  margin-left:2rem;
+  max-width: 500px;
+}
+// @media screen and (max-width: 480px) {
+//   .modal-content{
+//  width: 92%;
+//      height: 310px;
+// }
+
+// #app{
+//  top: 8rem;
+//  left: -6rem;
+// }
+// .text-container{
+ 
+//    margin-left: -2.5rem;
+// }
+// .stepProgress{
+//  left: -7rem;
+//  top: -0.5rem;
+// }
+
+// .progressBar-wrapper{
+//    left: 5.3rem;
+//    width: 67%;
+// }
+
+// #app input{
+//  width: 108%;
+//    margin-left: -1.6rem;
+//    padding-left: 11px;
+//    height: 49px;
+//    margin-top: 3px;
+// }
+
+// .send_btn {
+//     width: 109%;
+//    left: -1.7rem;
+// }
+// #app form div label {
+// left: -10px;
+//    font-size: 18px;
+//    top: 15px;
+// }
+// }

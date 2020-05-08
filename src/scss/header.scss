@@ -1,0 +1,31 @@
+
+
+.header{
+
+font-size: 26px;
+line-height: 45px;
+
+
+h2{
+
+font-weight: bold;
+  
+}
+
+ hr{
+
+    height: 3px;
+    background-position: 0px 0px;
+    background: $gradientColor;
+    }
+
+   }
+
+   @media screen and (max-width: 480px) {
+
+     .header h2{
+      font-size: 24px;
+      line-height: 43px;
+     } 
+    }
+

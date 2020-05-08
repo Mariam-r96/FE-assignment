@@ -1,0 +1,77 @@
+@import "./variables.scss";
+@import "./header.scss";
+@import "./section1.scss";
+@import "./section2.scss";
+@import "./section3.scss";
+@import "./popupBox.scss";
+@import "./modal.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    font-family: $font;
+    color: $fontColor;
+}
+
+#main{ 
+    // border : 2px solid #000; 
+    margin: 6rem 10rem 1rem 10rem;
+    overflow:hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+
+  #one {
+    
+    width: 60%;
+    height: 100%;
+  }
+
+  #two { 
+    width: 30%;
+    height: 640px;
+    margin-top: 9.5rem;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tips_Btn{
+    width: 220px;
+    height: 40px;
+    margin-top: 50px;
+    background: $gradientColor;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+  
+  @media screen and (max-width: 480px) {
+
+    #main{
+        margin: 0.5rem;
+    }
+  
+    #one {
+        order: 1;
+        width: 100%;
+    }
+
+    #two {
+        order: 2;
+        width: 100%;
+        height: 426px;
+        margin-top: unset;
+    }
+  }
